@@ -53,23 +53,23 @@ __Este código e demais arquivos auxiliares foram desenvolvidos e executados em 
 
 ### Restrições
 
-> __Importante__
+ __Importante__
 
-> __Para que a aplicação execute de maneira correta são necessários que as seguintes restrições descritas abaixo sejam respeitdas:__
+ __Para que a aplicação execute de maneira correta são necessários que as seguintes restrições descritas abaixo sejam respeitdas:__
 
-> __Este programa foi testado apenas para multiplicação de matrizes quadradas de mesmo tamanho ex: 100x100 * 100x100, 1000x1000 * 1000x1000,__
+ __Este programa foi testado apenas para multiplicação de matrizes quadradas de mesmo tamanho ex: 100x100 * 100x100, 1000x1000 * 1000x1000,__
 
-> __A versão da multiplicação em blocos foi testada para matrizes quadradas de mesmo tamanho onde N é multiplo de 2 ex: 128x128 * 128x128, 256x256 * 256x256, 512x512 * 512x512, e N divido pelo número de blocos deve ter resto da divisão igual a zero!!! ex: N (dimensão da matriz N*N) = 512, DB (dimensão dos blocos) = 16: 512/16 = 32, logo (N/DB % 2 == 0)__
+ __A versão da multiplicação em blocos foi testada para matrizes quadradas de mesmo tamanho onde N é multiplo de 2 ex: 128x128 * 128x128, 256x256 * 256x256, 512x512 * 512x512, e N divido pelo número de blocos deve ter resto da divisão igual a zero!!! ex: N (dimensão da matriz N*N) = 512, DB (dimensão dos blocos) = 16: 512/16 = 32, logo (N/DB % 2 == 0)__
 
-> __Para definir a dimensão dos blocos da versão sequencial basta alterar o valor armazenado na variável nBlocos no código fonte do arquivo main_matriz.c__
+ __Para definir a dimensão dos blocos da versão sequencial basta alterar o valor armazenado na variável nBlocos no código fonte do arquivo main_matriz.c__
 
-> __Para definir A dimensão dos blocos da versão paralela basta alterar o valor armazenado na variável TILE no código fonte do arquivo matriz-operacoes-threads.c__
+ __Para definir A dimensão dos blocos da versão paralela basta alterar o valor armazenado na variável TILE no código fonte do arquivo matriz-operacoes-threads.c__
 
-> __Para ambas versões devem ser respeitadas as restrições apresentadas acima__
+ __Para ambas versões devem ser respeitadas as restrições apresentadas acima__
 
-> __Foram adicionados alguns condicionais no código na definição das dimensões dos blcoso para garantir a execução da aplicação, mas estes valores podem não ser os melhores para diversos casos__
+ __Foram adicionados alguns condicionais no código na definição das dimensões dos blcoso para garantir a execução da aplicação, mas estes valores podem não ser os melhores para diversos casos__
 
-> __Foram definidas na main 30 execuções para cada versão da multiplicação de matrizes, para modificar é necessário alterar nos comandos de repetição *for* o número de repetições, além disso para que a média seja calculada de forma correta é necessário que o número que divide o conteúdo das variáveis que armazenam as médias seja igual ao número de repetições das funções de multiplicação.__
+ __Foram definidas na main 30 execuções para cada versão da multiplicação de matrizes, para modificar é necessário alterar nos comandos de repetição *for* o número de repetições, além disso para que a média seja calculada de forma correta é necessário que o número que divide o conteúdo das variáveis que armazenam as médias seja igual ao número de repetições das funções de multiplicação.__
 
 > Supondo que as restrições expostas acima foram respeitados
 
